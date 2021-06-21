@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Todo App</h1>
-        <p>learn react</p>
+        <p>Well that's weird but it looks like the tests are working!</p>
       </header>
       <main>
         <Form
