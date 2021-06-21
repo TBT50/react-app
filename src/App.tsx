@@ -22,6 +22,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Todo App</h1>
+        <p>learn react</p>
       </header>
       <main>
         <Form
