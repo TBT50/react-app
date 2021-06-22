@@ -1,26 +1,21 @@
 import React from 'react';
 
-import { AppContainer, ColumnContainer, ColumnTitle, CardContainer } from './styles';
+import { AppContainer } from './styles';
+
+import Column from './components/Column';
+import Card from './components/Card';
 
 const App: React.FC = () => {
   return (
     <AppContainer>
-      <ColumnContainer>
-        <ColumnTitle>
-          <h2>TEST</h2>
-        </ColumnTitle>
-        <CardContainer />
-        <CardContainer />
-        <CardContainer />
-      </ColumnContainer>
-      <ColumnContainer>
-        <ColumnTitle>
-          <h2>TEST#2</h2>
-        </ColumnTitle>
-        <CardContainer />
-        <CardContainer />
-        <CardContainer />
-      </ColumnContainer>
+      <Column columnTitle="Column 1">
+        <Card text="Card 1" />
+        <Card text="Card 2" />
+      </Column>
+      <Column columnTitle="Column 2">
+        <Card text="Card 1" />
+        <Card text="Card 2" />
+      </Column>
     </AppContainer>
   );
 };
